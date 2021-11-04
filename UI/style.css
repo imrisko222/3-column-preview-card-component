@@ -1,0 +1,120 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+  background-color: #f2f2f2;
+}
+
+body,
+html {
+  font-size: 15px;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  max-width: 75%;
+  background-color: #d9e7b4;
+  height: auto;
+}
+
+section {
+  font-size: 18px;
+  padding: 3em;
+}
+
+.left {
+  background-color: #eeb77c;
+}
+
+.left a {
+  color: #eeb77c;
+}
+
+.center {
+  background-color: #006970;
+}
+
+.center a {
+  color: #006970;
+}
+
+.right {
+  background-color: #004241;
+}
+
+.right button {
+  color: #004241;
+}
+
+img {
+  padding: 1em;
+}
+
+p {
+  color: #ffffffbf;
+  font-size: 1rem;
+  line-height: 1.4rem;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  font-family: "Lexend Deca", sans-serif;
+  font-weight: 400;
+}
+
+h3 {
+  text-transform: uppercase;
+  padding-top: 1rem;
+  color: #f2f2f2;
+  font-family: "Big Shoulders Display", cursive;
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+a {
+  padding: 0.5em 1em;
+  background-color: #f2f2f2;
+  font-family: "Lexend Deca", sans-serif;
+  border-radius: 50px;
+  border: none;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 1000px) {
+  body {
+    height: auto;
+  }
+  .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+/*# sourceMappingURL=style.css.map */

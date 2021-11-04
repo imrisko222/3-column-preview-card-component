@@ -1,0 +1,91 @@
+@import "variables";
+
+@import "mixins";
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: $neutral;
+}
+
+body,
+html {
+  font-size: 15px;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  max-width: 75%;
+
+  background-color: $bg-color;
+  height: auto;
+}
+
+// sections
+
+section {
+  font-size: 18px;
+  padding: 3em;
+}
+
+.left {
+  background-color: $first-bg-color;
+}
+
+.left a {
+  color: $first-bg-color;
+}
+
+.center {
+  background-color: $second-bg-color;
+}
+
+.center a {
+  color: $second-bg-color;
+}
+
+.right {
+  background-color: $third-bg-color;
+}
+
+.right button {
+  color: $third-bg-color;
+}
+
+img {
+  padding: 1em;
+}
+
+p {
+  @include paragraph;
+}
+
+h3 {
+  @include header;
+}
+
+a {
+  @include btns;
+}
+
+@media screen and (max-width: 1000px) {
+  body {
+    height: auto;
+  }
+
+  .container {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}

@@ -1,0 +1,27 @@
+@mixin btns {
+  padding: $btn-padding;
+  background-color: $btn-bg;
+  font-family: $btn-font;
+  border-radius: $btn-border-radius;
+  border: none;
+  text-decoration: none;
+}
+
+@mixin paragraph {
+  color: $p-color;
+  font-size: $p-size;
+  line-height: 1.4rem;
+  padding-top: $p-padding;
+  padding-bottom: $p-padding;
+  font-family: $p-font;
+  font-weight: $p-wght;
+}
+
+@mixin header {
+  text-transform: uppercase;
+  padding-top: $header-padding;
+  color: $neutral;
+  font-family: $header-font;
+  font-weight: $header-wght;
+  font-size: $header-font-size;
+}
